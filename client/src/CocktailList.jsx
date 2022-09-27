@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import config2 from '../../.config.js';
+import { config2 } from '../../config.js';
 import Cocktail from './Cocktail.jsx';
 
 export default function CocktailList({ ing }) {

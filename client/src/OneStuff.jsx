@@ -12,7 +12,9 @@ export default function OneStuff({ ingredient, updateList }) {
   return (
     <div className='oneStuff'>
       <b>{ingredient}</b>
-      <button onClick={deleteIng}>X</button>
+      <button className='dBut' onClick={deleteIng}>
+        X
+      </button>
     </div>
   );
 }

@@ -68,3 +68,8 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.dBut {
+  background-color: transparent;
+  padding: 0;
+}
