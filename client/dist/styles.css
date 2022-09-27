@@ -1,6 +1,7 @@
 body {
   max-width: 900px;
   margin: auto;
+  background-color: gray;
 }
 
 #root {

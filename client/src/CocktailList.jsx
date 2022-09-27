@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import config2 from '../../.config.js';
 import Cocktail from './Cocktail.jsx';
 
 export default function CocktailList({ ing }) {
   const [cocktails, setCocktails] = useState([]);
 
   useEffect(() => {
-    const config2 = {
-      baseURL: `https://api.api-ninjas.com/v1`,
-      headers: { 'X-Api-Key': 'V7MpFDsb7VAMlgRjMYq0cw==lTR20Oy57RKUZKho' },
-    };
     axios
       .get(`/cocktail?ingredients=${ing}`, config2)
       .then(({ data }) => setCocktails(data))
