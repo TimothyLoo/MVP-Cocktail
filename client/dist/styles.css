@@ -29,14 +29,23 @@ h3 {
 }
 
 .yourStuff {
-  border: 1px solid lightslategray;
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card {
+.oneStuff {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneStuff > b {
+  text-transform: capitalize;
+}
+
+.cards {
   height: 700px;
   overflow-y: auto;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import OneStuff from './OneStuff.jsx';
 
 export default function YourStuff({ list, updateList }) {
   const addIng = (e) => {
@@ -20,7 +21,7 @@ export default function YourStuff({ list, updateList }) {
         <button>Add</button>
       </form>
       {list.map(({ _id, ingredient }) => (
-        <div key={_id}>{ingredient}</div>
+        <OneStuff key={_id} ingredient={ingredient} updateList={updateList} />
       ))}
     </div>
   );

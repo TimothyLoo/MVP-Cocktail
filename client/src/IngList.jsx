@@ -18,7 +18,6 @@ export default function IngList() {
   return (
     <>
       <div className='ingredients'>
-        {console.log(list)}
         {list.map(({ _id, ingredient }) => (
           <Ing key={_id} ing={ingredient} />
         ))}
