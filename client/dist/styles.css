@@ -1,0 +1,60 @@
+body {
+  max-width: 900px;
+  margin: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  max-width: 50px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  width: 600px;
+}
+
+.yourStuff {
+  border: 1px solid lightslategray;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  height: 700px;
+  overflow-y: auto;
+}
+
+.card {
+  border: 1px solid lightslategray;
+  width: 300px;
+  height: 350px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.i {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
