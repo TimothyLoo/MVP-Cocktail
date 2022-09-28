@@ -5,7 +5,7 @@ const requests = require('requests');
 
 router.get('/cocktails/:name', (req, res) => {
   const { name } = req.params;
-  requests(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`)
+  requests(`${process.env.URL1}/search.php?s=${name}`)
     .on('data', (chunk) => res.json(JSON.parse(chunk)))
     .on('end', (error) => {
       if (error) res.send(error);
