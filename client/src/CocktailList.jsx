@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { config2 } from '../../config.js';
 import Cocktail from './Cocktail.jsx';
+import { fridge } from './fridge.js';
 
 export default function CocktailList({ ing }) {
   const [cocktails, setCocktails] = useState([]);
@@ -9,7 +10,30 @@ export default function CocktailList({ ing }) {
   useEffect(() => {
     axios
       .get(`/cocktail?ingredients=${ing}`, config2)
-      .then(({ data }) => setCocktails(data))
+      .then(({ data }) => {
+        data.sort((a, b) => {
+          let arrA = [];
+          let arrB = [];
+          for (const item of fridge) {
+            for (const i of a.ingredients) {
+              if (i.toLowerCase().includes(item.ingredient)) {
+                arrA.push(item.ingredient);
+                break;
+              }
+            }
+            for (const i of b.ingredients) {
+              if (i.toLowerCase().includes(item.ingredient)) {
+                arrB.push(item.ingredient);
+                break;
+              }
+            }
+          }
+          if (arrA.length < arrB.length) return 1;
+          if (arrA.length > arrB.length) return -1;
+          return 0;
+        });
+        setCocktails(data);
+      })
       .catch((err) => console.log(err));
   }, []);
 

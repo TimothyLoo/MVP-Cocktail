@@ -72,4 +72,5 @@ h3 {
 .dBut {
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
