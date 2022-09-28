@@ -74,6 +74,12 @@ h3 {
 .cards {
   height: 700px;
   overflow-y: auto;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.cards::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
 
 .card {
