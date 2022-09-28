@@ -7,6 +7,7 @@ body {
 #root {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 img {
@@ -32,6 +33,12 @@ h3 {
   overflow-x: auto;
   width: 600px;
   max-height: 900px;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.ingredients::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
 
 @media (max-width: 900px) {
