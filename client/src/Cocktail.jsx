@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { config } from '../../config.js';
 import { fridge } from './fridge.js';
 
 export default function Cocktail({ cocktail }) {
@@ -11,7 +10,7 @@ export default function Cocktail({ cocktail }) {
 
   useEffect(() => {
     axios
-      .get(`/search.php?s=${name}`, config)
+      .get(`/cocktails/${name}`)
       .then(({ data }) => {
         if (data.drinks) setDrink(data.drinks[0]);
       })

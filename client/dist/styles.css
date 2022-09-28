@@ -16,10 +16,14 @@ img {
 h2 {
   text-align: center;
   text-transform: capitalize;
+  font-family: 'Aref Ruqaa Ink', serif;
 }
 
 h3 {
+  color: white;
+  text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
   text-transform: capitalize;
+  font-family: 'Aref Ruqaa Ink', serif;
 }
 
 .ingredients {
@@ -73,7 +77,7 @@ h3 {
 }
 
 .card {
-  border: 1px solid lightslategray;
+  border: 1px solid black;
   width: 300px;
   height: 350px;
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { config2 } from '../../config.js';
 import Cocktail from './Cocktail.jsx';
 import { fridge } from './fridge.js';
 
@@ -9,7 +8,7 @@ export default function CocktailList({ ing }) {
 
   useEffect(() => {
     axios
-      .get(`/cocktail?ingredients=${ing}`, config2)
+      .get(`/ninja/${ing.replace(/\s/g, '+')}`)
       .then(({ data }) => {
         data.sort((a, b) => {
           let arrA = [];
