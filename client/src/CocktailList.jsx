@@ -35,7 +35,7 @@ export default function CocktailList({ ing }) {
         setCocktails(data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [fridge]);
 
   return (
     <div className='cards'>

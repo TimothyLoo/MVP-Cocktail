@@ -14,7 +14,6 @@ module.exports = {
       .catch((err) => res.send(err));
   },
   deleteIngredient: (req, res) => {
-    console.log(req.params);
     models
       .deleteIngredient(req.params)
       .then((result) => res.send(result))

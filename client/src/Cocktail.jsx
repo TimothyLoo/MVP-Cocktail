@@ -10,7 +10,6 @@ export default function Cocktail({ cocktail }) {
   const [drink, setDrink] = useState({});
 
   useEffect(() => {
-    console.log();
     axios
       .get(`/search.php?s=${name}`, config)
       .then(({ data }) => {
