@@ -27,6 +27,26 @@ h3 {
   flex-direction: row;
   overflow-x: auto;
   width: 600px;
+  max-height: 900px;
+}
+
+@media (max-width: 900px) {
+  .ingredients {
+    flex-direction: column;
+    width: 300px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    flex-direction: column;
+  }
+  .ingredients {
+    flex-direction: column;
+    width: 300px;
+    overflow-y: auto;
+  }
 }
 
 .yourStuff {
@@ -44,6 +64,7 @@ h3 {
 
 .oneStuff > b {
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .cards {

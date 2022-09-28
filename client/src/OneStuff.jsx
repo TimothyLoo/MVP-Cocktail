@@ -9,9 +9,15 @@ export default function OneStuff({ ingredient, updateList }) {
       .catch((err) => console.log(err));
   };
 
+  const jump = (e) => {
+    e.preventDefault();
+    window.location.href = `#${ingredient}`;
+    history.pushState({}, '', window.location.origin);
+  };
+
   return (
     <div className='oneStuff'>
-      <b>{ingredient}</b>
+      <b onClick={jump}>{ingredient}</b>
       <button className='dBut' onClick={deleteIng}>
         X
       </button>

@@ -21,12 +21,12 @@ export default function IngList() {
 
   return (
     <>
+      <YourStuff list={list} updateList={updateList} />
       <div className='ingredients'>
         {list.map(({ _id, ingredient }) => (
           <Ing key={_id} ing={ingredient} />
         ))}
       </div>
-      <YourStuff list={list} updateList={updateList} />
     </>
   );
 }
