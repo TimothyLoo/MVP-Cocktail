@@ -17,10 +17,9 @@ Timothy Loo\
 npm install
 ```
 
-Replace the "add your token here" to your API Token and save
+Go to https://api-ninjas.com/api/cocktail and sign-up for a free API key. In the copy.env file, replace 'YOUR_API_KEY_HERE' with the API key you are given at https://api-ninjas.com/api/cocktail.
 
-
-Duplicate `copy.env` to `.env`
+Rename `copy.env` to `.env`
 ```sh
 mv copy.env .env
 ```
