@@ -37,13 +37,9 @@ To create development build:
 npm run sdev & npm run cdev
 ```
 
-## Demos
-
-<details><summary>Questions & Answers</summary>
+## Demo
   
-![TJQAgif](https://user-images.githubusercontent.com/46430556/189738034-d5ff4d47-ff87-4df6-a45a-1b8ea216b983.gif)
-
-</details>
+![cocktail](https://user-images.githubusercontent.com/46430556/193097219-4f027070-6372-4d60-862a-9c04282b2580.gif)
 
 
 
@@ -58,6 +54,7 @@ npm run sdev & npm run cdev
 **Back-end:** &emsp;&nbsp; &nbsp;
   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
   ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+  ![MongoDB](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
   
 **Dev Environment:** &nbsp;&nbsp;
   ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
